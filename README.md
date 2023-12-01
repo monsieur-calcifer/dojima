@@ -12,7 +12,9 @@ Dojima is an event-driven algorithmic trading library built on Python. It is a m
 
 ### Main Differences to QTPyLib
 
-- **Focus on Cryptocurrency Trading**: Unlike QTPyLib, which is built for traditional financial products, Dojima is specifically designed for cryptocurrency trading.
+Although Dojima's architecture is based on QTPyLib, it is a complete rewrite. Some of the main differences are:
+
+- Focus on Cryptocurrency Trading: Unlike QTPyLib, which is built for traditional financial products, Dojima is specifically designed for cryptocurrency trading.
 - Use of CCXT Library: Dojima uses the CCXT library to connect to crypto exchanges, as opposed to QTPyLib's use of [ezIbPy](https://github.com/ranaroussi/ezibpy#ezibpy-pythonic-wrapper-for-ibpy), a wrapper for [IbPy](https://github.com/blampe/IbPy#ibpy---interactive-brokers-python-api), a python API client for Interactive Brokers. 
 - Use of Asyncio: Dojima uses the asyncio library for asynchronous operations, replacing QTPyLib's use of threading and multiprocessing.
 - Use of aiomysql: Dojima uses aiomysql for handling connections to the MySQL database, as opposed to QTPyLib's use of pymysql.
